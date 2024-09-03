@@ -100,7 +100,7 @@ jobs:
         enable-stack: true
         ghc-version: ${{ needs.build.outputs.ghc-ver }}
         stack-version: ${{ needs.build.outputs.stack-ver }}
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: agda-${{ runner.os }}-${{ github.sha }}
     - name: Unpack artifacts
@@ -132,7 +132,7 @@ jobs:
         enable-stack: true
         ghc-version: ${{ needs.build.outputs.ghc-ver }}
         stack-version: ${{ needs.build.outputs.stack-ver }}
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: agda-${{ runner.os }}-${{ github.sha }}
     - name: Unpack artifacts
@@ -171,7 +171,7 @@ jobs:
         enable-stack: true
         ghc-version: ${{ needs.build.outputs.ghc-ver }}
         stack-version: ${{ needs.build.outputs.stack-ver }}
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: agda-${{ runner.os }}-${{ github.sha }}
     - name: Unpack artifacts
@@ -211,7 +211,7 @@ jobs:
         enable-stack: true
         ghc-version: ${{ needs.build.outputs.ghc-ver }}
         stack-version: ${{ needs.build.outputs.stack-ver }}
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: agda-${{ runner.os }}-${{ github.sha }}
     - name: Unpack artifacts
